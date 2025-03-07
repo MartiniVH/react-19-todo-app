@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import { ITodoItem } from "../components/molecules/TodoItem";
 
 const BASE_URL = "https://jsonplaceholder.typicode.com";
 
@@ -9,7 +10,7 @@ export const getTodos = async () => {
   return data;
 };
 
-export const createTodo = async (todo: any) => {
+export const createTodo = async (todo: ITodoItem) => {
   const response = await fetch(`${BASE_URL}/todos`, {
     method: "POST",
     headers: {
@@ -26,7 +27,7 @@ export const createTodo = async (todo: any) => {
   return data;
 };
 
-export const updateTodo = async (todo: any) => {
+export const updateTodo = async (todo: ITodoItem) => {
   const response = await fetch(`${BASE_URL}/todos/${todo.id}`, {
     method: "PUT",
     body: JSON.stringify(todo),
