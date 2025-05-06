@@ -5,6 +5,7 @@ interface Props {
 }
 
 const CheckBox = ({ isCompleted, onChange, name }: Props) => {
+  const test = 'test';
   return (
     <label className="flex items-center cursor-pointer">
       <input
