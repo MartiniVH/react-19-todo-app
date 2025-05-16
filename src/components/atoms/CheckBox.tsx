@@ -20,3 +20,4 @@ const CheckBox = ({ isCompleted, onChange, name }: Props) => {
 }
 
 export default CheckBox;
+console.log('out of reach');
