@@ -7,6 +7,7 @@ interface Props {
 const CheckBox = ({ isCompleted, onChange, name }: Props) => {
   return (
     <label className="flex items-center cursor-pointer">
+      <h1>H1 example</h1>
       <input
         type="checkbox"
         checked={isCompleted}
@@ -20,4 +21,3 @@ const CheckBox = ({ isCompleted, onChange, name }: Props) => {
 }
 
 export default CheckBox;
-console.log('out of reach');
