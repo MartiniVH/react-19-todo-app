@@ -5,6 +5,7 @@ interface Props {
 }
 
 const CheckBox = ({ isCompleted, onChange, name }: Props) => {
+  console.log('ee')
   return (
     <label className="flex items-center cursor-pointer">
       <h1>H1 example</h1>
